@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "Adds the smashing enchantment",
+      "name": "Enchantment example addon",
+      "uuid": "8c14037f-ecee-4fdd-bf82-18d5dfffcb67",
+      "version": [1,0,0],
+      "min_engine_version": [1, 16, 0]
+    },
+    "modules": [
+      {
+        "description": "",
+        "type": "data",
+        "uuid": "f706ed76-c1e7-4467-bf2a-3167d46d5d46",
+        "version": [1,0,0]
+      },
+    {
+      "uuid": "b732838f-9673-4de3-8494-6f430f1427f9",
+      "entry": "scripts/main.js",
+      "type": "script",
+      "language": "javascript",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.9.0"
+        }
+    ]
+  }

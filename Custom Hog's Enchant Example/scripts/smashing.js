@@ -14,6 +14,7 @@ mc.world.afterEvents.entityHitEntity.subscribe(a =>{
         const equipment = attacker.getComponent("equippable");
         const item = equipment.getEquipment("Mainhand");
 
+        // Checking if the item is valid if not, stopping
         if (!item) return
 
         // Setting values

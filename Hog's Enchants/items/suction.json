@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:suction",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Suction\n§eInfo: §7Brings the hit mob toward the player\n§eEquipment: §7Sword"
+            }
+        }
+    }
+}

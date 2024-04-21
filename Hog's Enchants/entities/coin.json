@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "hog:coin",
+            "is_summonable": true,
+            "is_experimental": false,
+            "is_spawnable": false
+        },
+        "component_groups": {
+          "hog:die": {
+            "minecraft:instant_despawn": {}
+          }
+        },
+        "components": {
+            "minecraft:pushable": {
+              "is_pushable": false,
+              "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+              "width": 0,
+              "height": 0
+            },
+            "minecraft:health": {
+              "max": 0,
+              "min": 1,
+              "value": 10
+            },
+            "minecraft:damage_sensor": {
+              "triggers": {
+                "cause": "all",
+                "deals_damage": false
+              }
+            },
+            "minecraft:persistent": {},
+            "minecraft:fire_immune": {}
+        },
+        "events": {
+          "hog:dissapear": {
+            "add": {
+              "component_groups": [
+                "hog:die"
+              ]
+            }
+          }
+        }
+    }
+  }

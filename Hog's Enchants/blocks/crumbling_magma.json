@@ -1,0 +1,109 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "hog:crumbling_magma",
+            "menu_category":{
+                "category": "Commands"
+            },
+            "properties": {
+                "hog:stage": [0,1,2,3]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('hog:stage') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "basalt_top",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:queued_ticking": {
+                        "interval_range": [15,25],
+                        "on_tick": {
+                            "event": "hog:increase_stage"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('hog:stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crumbling_magma_1",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:queued_ticking": {
+                        "interval_range": [15,25],
+                        "on_tick": {
+                            "event": "hog:increase_stage"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('hog:stage') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crumbling_magma_2",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:queued_ticking": {
+                        "interval_range": [15,25],
+                        "on_tick": {
+                            "event": "hog:increase_stage"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('hog:stage') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crumbling_magma_3",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:queued_ticking": {
+                        "interval_range": [15,25],
+                        "on_tick": {
+                            "event": "hog:remove"
+                        }
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "basalt_top",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            }
+        },
+        "events": {
+            "hog:increase_stage": {
+                "set_block_state": {
+                    "hog:stage": "q.block_property('hog:stage')+1"
+                }
+            },
+            "hog:remove": {
+                "run_command": {
+                    "command": "setblock ~ ~ ~ lava"
+                }
+            }
+        }
+    }
+}

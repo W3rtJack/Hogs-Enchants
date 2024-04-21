@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hog:swine_slayer"
+        },
+        "tags": [ "crafting_table" ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "hog:fake_recipe"
+            }
+        },
+        "result": {
+            "item": "hog:swine_slayer"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:rainbow",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Rainbow\n§eInfo: §7When shearing a sheep gives a random color of wool!\n§eEquipment: §7Shears"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:tanking",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Tanking\n§eInfo: §7Gives extra hearts for the level\n§eEquipment: §7Leggings"
+            }
+        }
+    }
+}

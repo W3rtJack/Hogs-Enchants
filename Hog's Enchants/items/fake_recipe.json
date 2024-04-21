@@ -1,0 +1,17 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:fake_recipe",
+            "category": "None"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "fake"
+            },
+            "minecraft:display_name": {
+                "value": "§eItem Show\n§7Shows an enchantment and what it does.\nBook is unobtainable the enchantment\ncan be obtained with a hogchanting table"
+            }
+        }
+    }
+}

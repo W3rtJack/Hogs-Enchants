@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:diamond_dropping",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Diamond Dropping\n§eInfo: §7Has a low but possible chance\nto drop a diamond when performing\nan action related to the tool.\n§eEquipment: §7Sword/Pickaxe/Axe/Hoe/Shovel"
+            }
+        }
+    }
+}

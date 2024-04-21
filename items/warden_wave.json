@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:warden_wave",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Warden Wave\n§eInfo: §7When being attacked has a small chance\nto launch all enemies around you away!\n\nIf the wave happens around a warden\nthe warden will immediately dig away!\n§eEquipment: §7Shield"
+            }
+        }
+    }
+}

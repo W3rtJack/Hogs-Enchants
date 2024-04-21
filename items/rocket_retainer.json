@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description" :{
+            "identifier": "hog:rocket_retainer",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "book_enchanted"
+            },
+            "minecraft:foil": true,
+            "minecraft:display_name": {
+                "value": "§eEnchanted Book\n§7Rocket Retainer\n§eInfo: §7Has a chance to not use a rocket when boosting.\n§eEquipment: §7Elytra"
+            }
+        }
+    }
+}

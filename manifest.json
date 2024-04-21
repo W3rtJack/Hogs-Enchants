@@ -1,0 +1,43 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "This addon adds enchants made by me Hog!",
+	"name": "Hog's Enchants",
+	"uuid": "1264e3cd-a73f-4828-aa57-f806f5e8fabf",
+	"version": [1,0,0],
+    "min_engine_version": [1, 20, 30]
+  },
+  "modules": [
+    {
+	  "description": "",
+	  "type": "data",
+	  "uuid": "b90f3924-58a9-408c-abbf-000ec1309b35",
+	  "version": [1,0,0]
+	},
+  {
+    "type": "script",
+    "language":"javascript",
+    "uuid": "aeb8b4c0-d4e7-4965-bec0-aacdecf4a167",
+    "entry": "scripts/main.js",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  }
+  ],
+  "dependencies": [
+    {
+        "module_name": "@minecraft/server",
+        "version": "1.10.0-beta"
+    },
+    {
+	    "uuid": "6f3869c4-4abc-4581-83e6-9713421531d4",
+	    "version": [1,0,0]
+	  },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ]
+}
